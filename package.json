@@ -2,7 +2,7 @@
   "name": "react-tailwindcss-portfolio",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10",
+  "packageManager": "pnpm@10.1.0",
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@testing-library/jest-dom": "^5.16.5",
