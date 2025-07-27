@@ -1,0 +1,59 @@
+/* ✅ HERO SECTION */
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+  overflow: hidden;
+}
+
+/* Animated Gradient Background */
+.animated-bg {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: linear-gradient(45deg, #ff6f61, #ffcc70, #6b5b95, #88b04b);
+  background-size: 400% 400%;
+  animation: gradientMove 10s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Project Title with Gradient Text */
+.gradient-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffcc70, #ff6f61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Category Subtitle */
+.category {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Hero Image with Zoom-In Effect */
+.hero-image {
+  max-width: 400px;
+  border-radius: 12px;
+  animation: zoomIn 1.5s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
